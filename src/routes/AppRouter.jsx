@@ -1,7 +1,8 @@
-import { BrowserRouter, Routes, Route } from "react-router";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainLayout from "@/layouts/MainLayout";
 import Home from "../views/Home";
 import SearchResults from "@/views/SearchResults";
+import RoomDetail from "@/views/RoomDetail";
 import NotFound from "@/views/NotFound";
 
 export default function AppRouter() {
@@ -26,6 +27,16 @@ export default function AppRouter() {
             <SearchResults />
           </MainLayout>
         }
+      />
+
+      {/*Ruta a RoomDetail*/}
+      <Route
+      path="/roomdetail"
+      element={
+        <MainLayout>
+          <RoomDetail/>
+        </MainLayout>
+      }
       />
 
      {/* Ruta a NotFound 404 */}
