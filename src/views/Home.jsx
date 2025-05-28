@@ -16,7 +16,7 @@ const Home = () => {
             >
                 <h2 className="text-white fw-semibold display-6 text-shadow">Encuentra tu próxima aventura</h2>
             </div>
-            <div className="bg-white p-4 rounded shadow position-relative z-1 mx-auto" style={{maxWidth: '900px', marginTop: '-0px'}}>
+            <div className="bg-white p-4 rounded shadow position-relative z-1 mx-auto" style={{maxWidth: '900px', marginTop: '-40px'}}>
                 <SearchBar />
             </div>
             
